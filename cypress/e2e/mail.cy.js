@@ -1,7 +1,7 @@
 import { LoginPage } from "../support/pageObjectModel/loginPage";
 import { MailPage } from "../support/pageObjectModel/mailpage";
 
-describe('template spec with POM', () => {
+describe('Mail System ', () => {
   const loginPage = new LoginPage();
   const mailPage = new MailPage();
 
