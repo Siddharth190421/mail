@@ -16,6 +16,12 @@ describe('Mail System ', () => {
     cy.intercept("GET","/api/messages?server=ddqjhhki&page=0&itemsPerPage=50&dir=Received").as("all")
   });
 
+  it("regestration",()=>{
+    cy.visit("https://mailosaur.com/app/signup");
+    cy.get("#email").type("arrive-involved@ddqjhhki.mailosaur.net");
+    cy.get(`[type="submit"]`).contains("Create your account").click();
+});
+
   it('Login ', () => {
 
     loginPage.visit();
